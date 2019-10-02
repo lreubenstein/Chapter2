@@ -6,9 +6,9 @@ public class Frog {
 	
 	public Frog(String n,int x, int y)
 	{
-		name = n;
 		xPos=x;
 		yPos=y;
+		name = n;
 		System.out.println(name);
 	}
 	public void setPos(int x, int y)

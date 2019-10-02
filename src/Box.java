@@ -1,6 +1,6 @@
 // Joe student
 
-public class Box {		// box class
+public class Box {		// box class - classes start with upper case
 	private double height;		//attributes
 	private double width;
 	private double length;
@@ -34,17 +34,21 @@ public class Box {		// box class
 	}
 	
 	public void addOnions(int num) {
+
 		numberOnions = numberOnions + num;
 	}
 	
 	public int howManyOnions() {	// accessor method
+
 		return numberOnions;
 	}
 	
 	public double getHeight() {
+
 		return height;
 	}
 	public void changeHeight(double h) {
+
 		height = h;
 	}
 	
@@ -69,7 +73,7 @@ public class Box {		// box class
 		double v = box1.volume();
 		System.out.println("new volume of box1 is " + v);
 		// call a method with second box
-		System.out.println("the volume of our default box is "+ box2.volume());  
+		System.out.println("the volume of our default box is "+ box2.volume());
 
 	}
 
