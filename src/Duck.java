@@ -10,15 +10,17 @@ public class Duck {
 
     public Duck (String n, double h, double w, String c, Boolean p, Boolean hot, String m)
     {
+        name = n;
         weight = w;
         height = h;
         color = c;
         pointyBeak = p;
         hotDetector = hot;
         mood = m;
+        distanceSwam = 0;   // 0 by default
     }
 
-    public boolean hasPointyBeak(){
+    public boolean hasPointyBeak(){    //accessor method
         return pointyBeak;
     }
     public void walk(){
@@ -29,9 +31,28 @@ public class Duck {
         distanceSwam += dist;   // distanceSwam = distanceSwam + dist;
     }
 
+    public int getDistance(){   // accessor method
+        return distanceSwam;
+    }
+
+    public void annoyDuck(){
+        mood = "Sad";
+    }
+
+    public String getMood(){        //accessor method
+        return mood;
+    }
+
     public String talk(String topic){
         String s = "I like to " + topic;
         s += " I feel " + mood + " right now.";
+        return s;
+    }
+
+    public String toString(){
+        String s = "A " + color + " Duck named " + name + ".  ";
+        s += "It is " + height + " cm tall and weighs " + weight + " g. ";
+        s += "Right now it is in a " + mood + " mood.";
         return s;
     }
 
@@ -45,6 +66,9 @@ public class Duck {
         d1.walk();
 
         System.out.println(d2.talk("ducks"));
+
+        System.out.println(d1);
+        System.out.println(d2);
 
     }
 }

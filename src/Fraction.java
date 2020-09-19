@@ -20,9 +20,10 @@ public class Fraction {
 	{
 		return denominator;
 	}
+
 	public Fraction add(Fraction other)
 	{
-		int n = this.numerator*other.denominator + this.denominator*other.numerator;
+		int n = numerator*other.denominator + this.denominator*other.numerator;
 		int d = this.denominator * other.getDenom();
 		
 		Fraction result = new Fraction(n,d);
@@ -34,6 +35,8 @@ public class Fraction {
 	// TODO multiply()
 	
 	// TODO toString()
+
+	// TODO reciprocal()
 	
 	
 	public static void main(String[] args) {
@@ -55,5 +58,11 @@ public class Fraction {
 		
 
 	}
+	/*
+	3/4 + 4/5 = 31/20
+	3/4 - 4/5 = -1/20
+	3/4 * 4/5 = 12/20
+	4/3
+	 */
 
 }

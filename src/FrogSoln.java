@@ -78,6 +78,13 @@ public class FrogSoln {
 		System.out.println(f1);
 		System.out.println(f2);
 
+		FrogSoln f3 = new FrogSoln("Frank", -5,6);
+		System.out.println(f3);
+		f3.jump(3);
+		f3.jump(-2);
+		System.out.println(f3);
+		f3.visit(f1);
+		System.out.println(f3);
 	}
 
 }
@@ -90,4 +97,9 @@ Francine
 Yum
 Hi I am Freddy the frog and I live at 0 2
 Hi I am Francine the frog and I live at 0 2
+Frank
+Hi I am Frank the frog and I live at -5 6
+Hi I am Frank the frog and I live at -4 7
+Hi I am Frank the frog and I live at 0 2
+
 */
