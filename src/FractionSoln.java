@@ -77,7 +77,7 @@ public class FractionSoln {
 		FractionSoln f5 = f1.multiply(f2);
 		System.out.println(f1 + " * " + f2 + " = " + f5);
 		
-		System.out.println(f1.reciprocal());
+		System.out.println("the reciprocal of " +f1 + " is "+f1.reciprocal());
 		
 		
 	}
