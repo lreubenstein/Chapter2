@@ -20,4 +20,22 @@ public class EvilCabal {
         disgruntledScientist = new Person(name);
         disgruntledScientist.setEvil(true);
     }
+    public String toString(){
+        String s = evilGenius + " " + redeemableAssistant;
+
+        int karma = evilGenius.getKarmaPoints()+redeemableAssistant.getKarmaPoints();
+        if(disgruntledScientist!= null){
+            s += "\n" + disgruntledScientist;
+            karma += disgruntledScientist.getKarmaPoints();
+        }
+        s += "\nTotal karma points " + karma;
+        return s;
+    }
+
+    public static void main(String[] args){
+        EvilCabal ec = new EvilCabal("Dr. Evil", "Mini-me");
+        ec.plotEarthDestruction();
+        ec.addDistgruntledScientist("Number 2");
+        System.out.println(ec);
+    }
 }

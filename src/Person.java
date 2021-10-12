@@ -30,11 +30,11 @@ public class Person {
         return isEvil;
     }
 
-
     public String toString(){
         String s = name + " has " + karmaPoints;
-        if(isEvil) s += "and is evil";
+        if(isEvil) s += " and is evil";
         return s;
     }
+
 }
 
